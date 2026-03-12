@@ -264,14 +264,14 @@ body {
 
 @font-face {
     font-family: 'Moniqa';
-    src: url('fonts/OpenType-PS (OTF)/Moniqa-Display.otf') format('opentype');
+    src: url('Moniqa-Display.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Moniqa';
-    src: url('fonts/OpenType-PS (OTF)/Moniqa-BoldDisplay.otf') format('opentype');
+    src: url('Moniqa-BoldDisplay.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
 }
@@ -1327,4 +1327,5 @@ body.logged-in .counter-badge {
     .site-header {
         padding: 20px 50px;
     }
+
 }
