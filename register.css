@@ -1,0 +1,358 @@
+        .register-page {
+            margin: 60px 0;
+        }
+
+        .register-title {
+            font-family: 'Moniqa', sans-serif;
+            font-weight: 800;
+            font-size: 60px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #111111;
+        }
+
+        .login-prompt {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 50px;
+        }
+
+        .login-link {
+            color: #0154BB;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .login-link:hover {
+            color: #003c8f;
+            text-decoration: underline;
+        }
+
+        .register-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .register-form {
+            display: flex;
+            gap: 60px;
+        }
+
+        .form-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            width: 50%;
+        }
+
+        .form-label {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-label::after {
+            content: '*';
+            color: #ff0000;
+            margin-left: 2px;
+            display: inline;
+            font-weight: normal;
+        }
+
+        .form-group:not(.form-label) .form-label::after {
+            content: none;
+        }
+
+        .form-group {
+            position: relative;
+            width: 100%;
+        }
+
+        .form-label {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 5px;
+            color: #111111;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px 0;
+            border: none;
+            border-bottom: 1px solid #7A7A7A;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            background-color: transparent;
+            transition: border-color 0.3s ease;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .form-input:focus {
+            border-bottom-color: #0154BB;
+        }
+
+        .country-select {
+            width: 100%;
+            padding: 10px 0;
+            border: none;
+            border-bottom: 1px solid #7A7A7A;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            background-color: transparent;
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%2F%3E%3C%2Fsvg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0 center;
+            border-radius: 0;
+        }
+
+        .birthdate-wrapper {
+            display: flex;
+            gap: 0px;
+            align-items: flex-end;
+        }
+
+        .birthdate-inputs {
+            display: flex;
+            gap: 10px;
+            flex: 1;
+            width: auto;
+        }
+
+        .birthdate-input {
+            flex: 1;
+            padding: 10px 0;
+            border: none;
+            border-bottom: 1px solid #7A7A7A;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            background-color: transparent;
+            text-align: center;
+            transition: border-color 0.3s ease;
+            outline: none;
+            width: 30px;
+            width: 60px;
+            min-width: 60px;
+            max-width: 60px;
+        }
+
+
+        .calendar-btn {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: border-color 0.3s ease;
+            padding: 0;
+            margin-left: -15px;
+        }
+
+        .calendar-btn:hover {
+            border-bottom-color: #0154BB;
+        }
+
+        .calendar-btn svg {
+            width: 20px;
+            height: 20px;
+            stroke: #000;
+            transition: stroke 0.3s ease;
+        }
+
+        .calendar-btn:hover svg {
+            stroke: #0154BB;
+        }
+
+        .register-submit-btn {
+            width: 100%;
+            padding: 16px;
+            background-color: #0154BB;
+            color: #fff;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 40px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .agreement-container {
+            max-width: 1000px;
+            margin: 30px auto 20px;
+            padding: 0 20px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #111111;
+            position: relative;
+        }
+
+        .checkbox-input {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .checkbox-custom {
+            width: 16px;
+            height: 16px;
+            border: 1.5px solid #111111;
+            display: inline-block;
+            position: relative;
+            flex-shrink: 0;
+            background-color: #fff;
+            transition: all 0.2s ease;
+        }
+
+        .checkbox-input:checked+.checkbox-custom::after {
+            content: '';
+            position: absolute;
+            left: 4px;
+            top: 0px;
+            width: 4px;
+            height: 8px;
+            border: solid #111111;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+
+
+        .checkbox-text {
+            flex: 1;
+        }
+
+        .agreement-link {
+            color: #0154BB;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s ease;
+            text-decoration: underline;
+        }
+
+        .agreement-link:hover {
+            color: #0154BB;
+            text-decoration: underline;
+        }
+
+        .register-submit-btn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
+        .register-submit-btn:disabled:hover {
+            background-color: #ccc;
+        }
+
+        .form-input.error,
+        .country-select.error,
+        .birthdate-input.error {
+            border-bottom-color: #ff0000 !important;
+        }
+
+        .error-message {
+            color: #ff0000;
+            font-size: 12px;
+            margin-top: 5px;
+            font-family: 'Montserrat', sans-serif;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form-input:invalid,
+        .form-input:required,
+        .form-input:valid {
+            box-shadow: none;
+        }
+
+
+
+        @media (max-width: 1340px) {
+
+            .register-page {
+                margin: 50px 0;
+            }
+
+            .register-title {
+                font-size: 60px;
+            }
+
+            .login-prompt {
+                font-size: 18px;
+                margin-bottom: 40px;
+            }
+
+            .register-container {
+                max-width: 900px;
+                padding: 0 15px;
+            }
+
+            .register-form {
+                gap: 60px;
+            }
+
+            .form-label {
+                font-size: 18px;
+            }
+
+            .form-input,
+            .country-select,
+            .birthdate-input {
+                font-size: 18px;
+            }
+
+            .birthdate-input {
+                width: 50px;
+                min-width: 50px;
+                max-width: 50px;
+            }
+
+            .checkbox-label {
+                font-size: 15px;
+            }
+
+            .register-submit-btn {
+                max-width: 900px;
+                font-size: 17px;
+                padding: 14px;
+            }
+        }

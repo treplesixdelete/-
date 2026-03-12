@@ -1,0 +1,727 @@
+.product-breadcrumbs {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin: 30px 0 40px;
+}
+
+.product-breadcrumbs a {
+    color: #666;
+    text-decoration: none;
+}
+
+.product-breadcrumbs a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.product-breadcrumbs span {
+    color: #000;
+    font-weight: 600;
+}
+
+.product-container {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.product-gallery {
+    flex: 1;
+    flex: 0 0 35%;
+}
+
+.product-main-image {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #7A7A7A;
+    display: inline-block;
+    width: fit-content;
+    padding: 30px;
+}
+
+.product-main-image img {
+    transition: opacity 0.3s ease;
+    width: 478px;
+    height: 478px;
+    display: block;
+}
+
+.series-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.series-link:hover {
+    color: #0066ff;
+}
+
+.series-link.active {
+    color: #0066ff;
+    font-weight: 600;
+}
+
+.product-thumbnails {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+    border-color: #000;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    flex: 1;
+    max-width: 600px;
+
+}
+
+.product-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.1;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+
+.product-price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #111111;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 15px 0;
+}
+
+
+.variant-radio-group {
+    display: flex;
+    gap: 45px;
+    margin-bottom: 25px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+
+.radio-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio-custom {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.radio-input:checked+.radio-custom::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.radio-text {
+    color: #111111;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+
+}
+
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin-bottom: 30px;
+}
+
+.quantity-label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.quantity-controls {
+    display: flex;
+
+}
+
+.quantity-btn {
+    width: 60px;
+
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.quantity-input {
+    width: 40px;
+    height: 40px;
+    border: none;
+
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.cart-action {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    margin-bottom: 15px;
+}
+
+.heart-img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.add-to-cart-btn {
+    width: 263px;
+    height: 52px;
+    padding: 18px;
+    background-color: #0154BB;
+    color: #fff;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.free-shipping {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #111111;
+    font-weight: 600;
+    flex-direction: row;
+    margin-right: 500px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    align-items: center;
+    line-height: 1;
+}
+
+.delivery-icon {
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    flex-shrink: 0;
+    margin: 10px;
+    vertical-align: middle;
+
+}
+
+.product-description {
+    margin-top: 15px;
+    padding-top: 40px;
+    max-width: 500px;
+}
+
+.description-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #111111;
+}
+
+.description-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #111111;
+    font-weight: 400;
+}
+
+.description-paragraph {
+    margin-bottom: 30px;
+}
+
+.description-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.description-paragraph:first-child {
+    font-weight: 400;
+    color: #111111;
+}
+
+
+.blue-dot-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #111111;
+    list-style: none;
+}
+
+.blue-dot-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 5px;
+    height: 5px;
+    background-color: #0154BB;
+    border-radius: 50%;
+}
+
+.all-series-section {
+    margin-top: 30px;
+    padding-top: 40px;
+}
+
+.series-title {
+    font-family: 'Moniqa', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #111111;
+
+}
+
+.series-list {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 2;
+    color: #111111;
+    font-weight: 400;
+}
+
+
+.horizontal-posters-container {
+    display: flex;
+    gap: 0px;
+    width: 100%;
+}
+
+.poster-horizontal-item {
+    flex: 1;
+    min-width: 0;
+    flex: none;
+    width: 350px;
+    min-width: 350px;
+
+}
+
+.poster-color-block {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    aspect-ratio: 1 / 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.red-block {
+    background-color: #6ECB03;
+}
+
+.blue-block {
+    background-color: #EC6F2D;
+}
+
+.green-block {
+    background-color: #5899EF;
+}
+
+.yellow-block {
+    background-color: #FAEB50;
+}
+
+.poster-heart {
+    position: absolute;
+    top: 18px;
+    right: 29px;
+    z-index: 10;
+}
+
+.heart-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    content: url('сердце.png');
+}
+
+.heart-icon:hover {
+    content: url('heart.png');
+}
+
+.poster-inside {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+}
+
+.poster-inside-img {
+    max-width: 216px;
+    max-height: 216px;
+    object-fit: contain;
+    display: block;
+}
+
+.poster-bottom-info {
+    padding: 15px 0 5px;
+    margin-top: 10px;
+}
+
+.poster-horizontal-price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+
+    margin-bottom: 8px;
+    color: #111111;
+}
+
+.poster-horizontal-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.poster-horizontal-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #111111;
+    font-weight: 500;
+}
+
+.poster-horizontal-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-icon {
+    content: url('корзина.png');
+    width: 24px;
+    height: 24px;
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.cart-icon:hover {
+    content: url('Component\ 8.png');
+}
+
+.full-width-posters {
+    width: 100vw;
+    position: relative;
+    left: 140%;
+    right: 0%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 40px 0;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.posters-full-container {
+    display: flex;
+    gap: 0;
+    width: 100%;
+    padding: 0 60px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.poster-horizontal-item {
+    flex: 1;
+    min-width: 0;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.popup-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 810px;
+    height: 810px;
+}
+
+.popup-white-frame {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #7A7A7A;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.popup-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    color: #000;
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    z-index: 10000;
+    line-height: 1;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-close:hover {
+    color: #111111;
+}
+
+.popup-inner-frame {
+    width: 676px;
+    height: 676px;
+    border: 1px solid #7A7A7A;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: -20px;
+}
+
+.popup-image {
+    width: 586px;
+    height: 586px;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+@media (max-width: 1340px) {
+
+    .product-container {
+        gap: 40px;
+    }
+
+    .product-gallery {
+        flex: 0 0 40%;
+    }
+
+    .product-main-image {
+        padding: 20px;
+    }
+
+    .product-main-image img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .product-info {
+        max-width: 500px;
+    }
+
+    .product-title {
+        font-size: 22px;
+    }
+
+    .product-price {
+        font-size: 36px;
+        margin: 20px 0;
+    }
+
+    .variant-radio-group {
+        gap: 30px;
+    }
+
+    .radio-label {
+        font-size: 16px;
+    }
+
+    .quantity-selector {
+        gap: 30px;
+    }
+
+    .quantity-label {
+        font-size: 16px;
+    }
+
+    .quantity-btn {
+        width: 50px;
+        font-size: 18px;
+    }
+
+    .cart-action {
+        gap: 20px;
+    }
+
+    .add-to-cart-btn {
+        width: 220px;
+        height: 48px;
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .free-shipping {
+        margin-right: 200px;
+        font-size: 16px;
+    }
+
+    .delivery-icon {
+        margin: 5px;
+    }
+
+    .product-description {
+        max-width: 450px;
+    }
+
+    .description-title {
+        font-size: 17px;
+    }
+
+    .description-text {
+        font-size: 16px;
+    }
+
+    .blue-dot-list li {
+        font-size: 16px;
+    }
+
+    .series-title {
+        font-size: 36px;
+    }
+
+    .series-list {
+        font-size: 16px;
+    }
+
+    .poster-horizontal-item {
+        width: 300px;
+        min-width: 300px;
+    }
+
+    .poster-color-block {
+        width: 300px;
+        height: 300px;
+        padding: 40px 25px 15px 25px;
+    }
+
+    .poster-inside-img {
+        max-width: 180px;
+        max-height: 180px;
+    }
+
+    .poster-horizontal-price {
+        font-size: 18px;
+    }
+
+    .poster-horizontal-title {
+        font-size: 14px;
+    }
+
+    .full-width-posters {
+        left: 133%;
+    }
+
+    .posters-full-container {
+        padding: 0 40px;
+    }
+
+    .popup-container {
+        width: 700px;
+        height: 700px;
+    }
+
+    .popup-inner-frame {
+        width: 580px;
+        height: 580px;
+    }
+
+    .popup-image {
+        width: 500px;
+        height: 500px;
+    }
+}
